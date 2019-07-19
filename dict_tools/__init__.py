@@ -7,6 +7,6 @@ def map_keys(function, dictionary):
 
 def map_values(function, dictionary):
     return {
-        key: function(value),
+        key: function(value)
         for key, value in dictionary.items()
     }
