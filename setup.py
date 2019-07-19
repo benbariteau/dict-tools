@@ -6,7 +6,7 @@ setup(
     description='Utilities for dealing with dictionaries',
     url='https://github.com/firba1/dict-tools',
     author='Ben Bariteau',
-    email='ben.bariteau@gmail.com',
+    author_email='ben.bariteau@gmail.com',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
