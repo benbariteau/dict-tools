@@ -19,3 +19,10 @@ def iter_multi_values(dictionary):
                 yield (key, subvalue)
         else:
             yield (key, value)
+
+
+def swap_key_value(dictionary):
+    return {
+        value: key
+        for key, value in dictionary.items()
+    }

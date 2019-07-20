@@ -1,5 +1,5 @@
 import pytest
-from dict_tools import map_keys, map_values, iter_multi_values
+from dict_tools import map_keys, map_values, iter_multi_values, swap_key_value
 
 
 def test_map_keys():
@@ -43,3 +43,15 @@ def test_iter_multi_values():
         ('no', 'pomegranates'),
     ]
     assert [i for i in iter_multi_values(mydict)] == myresult
+
+
+def test_swap_key_value():
+    mydict = {
+        'subscribe to': 'Dull Bananas',
+        'hotel': 'trivago',
+    }
+    myresult = {
+        'Dull Bananas': 'subscribe to',
+        'trivago': 'hotel',
+    }
+    assert swap_key_value(mydict) == myresult
