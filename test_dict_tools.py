@@ -1,5 +1,5 @@
 import pytest
-from dict_tools import map_keys, map_values, iter_multi_values, swap_key_value
+from dict_tools import *
 
 
 def test_map_keys():
@@ -30,6 +30,19 @@ def test_map_values():
         'three': 3,
     }
     assert map_values(myfunc, mydict) == myresult
+
+
+def test_map_all():
+    myfunc = (lambda x: x-1)
+    mydict = {
+        1: 1,
+        2: 2,
+    }
+    myresult = {
+        0: 0,
+        1: 1,
+    }
+    assert map_all(myfunc, mydict) == myresult
 
 
 def test_iter_multi_values():

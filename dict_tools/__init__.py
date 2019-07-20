@@ -12,6 +12,13 @@ def map_values(function, dictionary):
     }
 
 
+def map_all(function, dictionary):
+    return {
+        function(key): function(value)
+        for key, value in dictionary.items()
+    }
+
+
 def iter_multi_values(dictionary):
     for key, value in dictionary.items():
         if isinstance(value, (tuple, list)):
