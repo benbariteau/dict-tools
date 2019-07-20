@@ -1,5 +1,5 @@
 import pytest
-from dict_tools import map_keys, map_values
+from dict_tools import map_keys, map_values, iter_multi_values
 
 
 def test_map_keys():
@@ -30,3 +30,16 @@ def test_map_values():
         'three': 3,
     }
     assert map_values(myfunc, mydict) == myresult
+
+
+def test_iter_multi_values():
+    mydict = {
+        'ur': ('mum', 'fat'),
+        'no': 'pomegranates',
+    }
+    myresult = [
+        ('ur', 'mum'),
+        ('ur', 'fat'),
+        ('no', 'pomegranates'),
+    ]
+    assert [i for i in iter_multi_values(mydict)] == myresult
