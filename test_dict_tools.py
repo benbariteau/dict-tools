@@ -45,7 +45,7 @@ def test_iter_multi_values():
     assert [i for i in iter_multi_values(mydict)] == myresult
 
 
-def test_swap_key_value():
+def test_invert_dict():
     mydict = {
         'subscribe to': 'Dull Bananas',
         'hotel': 'trivago',
@@ -54,4 +54,4 @@ def test_swap_key_value():
         'Dull Bananas': 'subscribe to',
         'trivago': 'hotel',
     }
-    assert swap_key_value(mydict) == myresult
+    assert invert_dict(mydict) == myresult

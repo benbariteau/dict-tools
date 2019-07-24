@@ -21,7 +21,7 @@ def iter_multi_values(dictionary):
             yield (key, value)
 
 
-def swap_key_value(dictionary):
+def invert_dict(dictionary):
     return {
         value: key
         for key, value in dictionary.items()
