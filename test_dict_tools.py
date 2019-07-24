@@ -32,19 +32,6 @@ def test_map_values():
     assert map_values(myfunc, mydict) == myresult
 
 
-def test_map_all():
-    myfunc = (lambda x: x-1)
-    mydict = {
-        1: 1,
-        2: 2,
-    }
-    myresult = {
-        0: 0,
-        1: 1,
-    }
-    assert map_all(myfunc, mydict) == myresult
-
-
 def test_iter_multi_values():
     mydict = {
         'ur': ('mum', 'fat'),
