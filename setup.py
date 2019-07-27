@@ -1,14 +1,9 @@
 from setuptools import setup
 
-with open('README.md', 'r') as f:
-    readme = f.read()
-
 setup(
     name='dict-tools',
     version='0.1.0',
     description='Utilities for dealing with dictionaries',
-    long_description=readme,
-    long_description_content_type='text/markdown',
     keywords='dictionaries',
     url='https://github.com/firba1/dict-tools',
     author='Ben Bariteau',
