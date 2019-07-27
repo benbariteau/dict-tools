@@ -12,7 +12,7 @@ def map_values(function, dictionary):
     }
 
 
-def iter_multi_values(dictionary):
+def flattened_items(dictionary):
     for key, value in dictionary.items():
         if isinstance(value, (tuple, list)):
             for subvalue in value:

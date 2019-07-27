@@ -32,7 +32,7 @@ def test_map_values():
     assert map_values(myfunc, mydict) == myresult
 
 
-def test_iter_multi_values():
+def test_flattened_items():
     mydict = {
         'ur': ('mum', 'fat'),
         'no': 'pomegranates',
@@ -42,7 +42,7 @@ def test_iter_multi_values():
         ('ur', 'fat'),
         ('no', 'pomegranates'),
     ]
-    assert [i for i in iter_multi_values(mydict)] == myresult
+    assert [i for i in flattened_items(mydict)] == myresult
 
 
 def test_invert_dict():
