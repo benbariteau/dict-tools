@@ -14,11 +14,8 @@ def map_values(function, dictionary):
 
 def flattened_items(dictionary):
     for key, value in dictionary.items():
-        if isinstance(value, (tuple, list)):
-            for subvalue in value:
-                yield (key, subvalue)
-        else:
-            yield (key, value)
+        for subvalue in value:
+            yield (key, subvalue)
 
 
 def invert_dict(dictionary):

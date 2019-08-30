@@ -35,7 +35,7 @@ def test_map_values():
 def test_flattened_items():
     mydict = {
         'ur': ('mum', 'fat'),
-        'no': 'pomegranates',
+        'no': ('pomegranates',),
     }
     myresult = [
         ('ur', 'mum'),
