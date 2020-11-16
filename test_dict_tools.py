@@ -55,3 +55,17 @@ def test_invert_dict():
         'trivago': 'hotel',
     }
     assert invert_dict(mydict) == myresult
+
+def test_group_by():
+    assert group_by(
+        [
+            ('foo', 420),
+            ('bar', 666),
+            ('foo', 69),
+            ('bar', 42),
+        ],
+        key=lambda value: value[0],
+    ) == {
+        'foo': [('foo', 420), ('foo', 69)],
+        'bar': [('bar', 666), ('bar', 42)],
+    }
