@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='dict-tools',
-    version='0.2.0',
+    version='0.3.0',
     description='Utilities for dealing with dictionaries',
     keywords='dictionaries',
     url='https://github.com/firba1/dict-tools',
